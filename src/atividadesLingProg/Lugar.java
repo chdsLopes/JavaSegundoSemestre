@@ -4,9 +4,9 @@ public class Lugar {
 	
 	private String name;
 	private String pontosTuristicos;
-	private int populacao;
+	private double populacao;
 	
-	Lugar(String name , int populacao){
+	Lugar(String name , double populacao){
 		this.name = name;
 		this.populacao = populacao;
 		
@@ -28,7 +28,7 @@ public class Lugar {
 		this.pontosTuristicos = pontosTuristicos;
 	}
 
-	public int getPopulacao() {
+	public double getPopulacao() {
 		return populacao;
 	}
 
