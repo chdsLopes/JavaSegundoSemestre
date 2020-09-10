@@ -3,16 +3,43 @@ package atividadesLingProg;
 public class Pessoa {
 	
 	
-	private int cpf;
+	private float cpf;
 	private String name;
 	private int idade;
+	private double altura;
+	private String genero;
 	
 	
 	
-	public int getCpf() {
+	Pessoa(float cpf, String name, int idade, double altura, String genero){
+		this.cpf = cpf;
+		this.name = name;
+		this.idade = idade;
+		this.altura = altura;
+		this.genero = genero;
+	}
+	
+	
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	
+	public float getCpf() {
 		return cpf;
 	}
-	public void setCpf(int cpf) {
+	public void setCpf(float cpf) {
 		this.cpf = cpf;
 	}
 	public String getName() {
