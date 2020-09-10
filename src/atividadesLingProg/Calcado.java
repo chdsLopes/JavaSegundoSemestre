@@ -11,10 +11,12 @@ public class Calcado {
 	private int tamanho;
 	
 	
-	Calcado(int tamanho, String tipo, String marca){
+	Calcado(int tamanho, String tipo, String marca, String material, String cor){
 		this.tamanho= tamanho;
 		this.tipo=tipo;
 		this.marca=marca;
+		this.material=material;
+		this.cor=cor;
 	}
 	
 	

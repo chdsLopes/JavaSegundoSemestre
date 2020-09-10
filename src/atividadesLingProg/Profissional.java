@@ -3,15 +3,17 @@ package atividadesLingProg;
 public class Profissional {
 	
 	private double salario;
-	private String name;
+	private String nome;
 	private String cargo;
 	private String departamento;
 	private int registro;
 	
-	Profissional(String nome, String cargo, int registro){
-		nome = name;
+	Profissional(String nome, String cargo, int registro, String departamento, double salario){
+		this.nome = nome;
 		this.cargo = cargo;
 		this.registro = registro;
+		this.departamento= departamento;
+		this.salario=salario;
 	}
 	
 	public double getSalario() {
@@ -20,11 +22,11 @@ public class Profissional {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	public String getName() {
-		return name;
+	public String getNome() {
+		return nome;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public String getCargo() {
 		return cargo;

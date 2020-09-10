@@ -8,6 +8,14 @@ public class AlunoFatecSJC {
 	private double nota;
 	
 	
+	AlunoFatecSJC(double ra, String name, double qtdDisciplicasCursadas, double nota){
+		this.ra = ra;
+		this.nome = nome;
+		this.qtdDisciplinasCursadas = qtdDisciplicasCursadas;
+		this.nota = nota;
+	}	
+	
+	
 	public double getNota() {
 		return nota;
 	}
@@ -16,11 +24,7 @@ public class AlunoFatecSJC {
 		this.nota = nota;
 	}
 
-	AlunoFatecSJC(double ra, String name, double qtdDisciplicasCursadas){
-		this.ra = ra;
-		this.nome = name;
-		this.qtdDisciplinasCursadas = qtdDisciplicasCursadas;
-	}
+	
 	
 	public double getRa() {
 		return ra;
@@ -28,11 +32,11 @@ public class AlunoFatecSJC {
 	public void setRa(int ra) {
 		this.ra = ra;
 	}
-	public String getName() {
+	public String getNome() {
 		return nome;
 	}
-	public void setName(String name) {
-		this.nome = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public double getQtdDisciplinasCursadas() {
 		return qtdDisciplinasCursadas;
